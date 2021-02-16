@@ -1,0 +1,34 @@
+.container{
+    max-width: 120rem;
+    margin: 8rem auto;
+    box-shadow: var(--shadow-dark );
+    min-height: 50rem;
+    background-color: var(--color-Grey-light-1);
+}
+
+.header{
+    height: 7rem;
+    border-bottom: var(--color-Grey-light-2);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.content{
+    display: flex;
+}
+
+.sidebar{
+    background-color: var(--color-Grey-dark-1);
+    flex: 0 0 18%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
+}
+
+.main-section{
+    flex: 1;
+    height: 80rem;
+}
+

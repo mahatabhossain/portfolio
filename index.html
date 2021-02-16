@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--Goole font-->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" type="image/png" href="img/favicon.png">
+
+    <title>Home&mdash; portfolio</title>
+</head>
+
+<body>
+
+    <!--------MAIN CONTAINER OF WEBPAGE-------------->
+    <div class="container">
+
+        <!---------------HEADER PART----------------->
+        <header class="header">
+            <img src="img/logo.png" alt="project logo" class="logo">
+
+            <!-------always use form for a search box----------->
+            <form class="search" action="#">
+                <input type="text" class="search__input" placeholder="search here">
+                
+                 <!--------- The best way to Insert SVG ICON on webpage---------->
+                <button class="search__button">
+                    <svg class="search__icon">
+                        <use xlink:href="img/sprite.svg#icon-magnifying-glass"></use>
+                    </svg>
+                </button>
+            </form>
+
+            <!--Toggle Button-->
+            <div class="toggle__button">
+                <input type="checkbox" name="toggle">
+                
+            </div>
+
+            <!---------User navigation------------>
+            <nav class="user-nav">
+                <div class="user-nav__icon-box">
+                    <svg class="user-nav__icon">
+                        <use xlink:href="img/sprite.svg#icon-bookmark"></use>
+                    </svg>
+                    <span class="user-nav__notification">7</span>
+                </div>
+
+                <div class="user-nav__icon-box">
+                    <svg class="user-nav__icon">
+                        <use xlink:href="img/sprite.svg#icon-chat"></use>
+                    </svg>
+                    <span class="user-nav__notification">13</span>
+                </div>
+
+                <div class="user-nav__user">
+                    <img src="img/user.jpg" alt="user-photo" class="user-nav__user-photo">
+                    <span class="user-nav__user-name">Mahatab Hossain</span>
+                </div>
+            </nav>
+        </header>
+
+        <!-------------Side Navigation------------------>
+        <div class="content">
+            <nav class="sidebar">
+                <ul class="side-nav">
+
+                    <li class="side-nav__item side-nav__item-active">
+                        <a href="#" class="side-nav__link">
+                        <svg class="side-nav__icon">
+                            <use xlink:href="img/sprite.svg#icon-home"></use>
+                        </svg>
+                        <span>Secondary</span>
+                        </a>
+                    </li>
+
+                    <li class="side-nav__item">
+                        <a href="#" class="side-nav__link">
+                            <svg class="side-nav__icon">
+                                <use xlink:href="img/symbol.svg#icon-book"></use>
+                            </svg>
+                            <span>H.S</span>
+                        </a>
+                    </li>
+
+                    <li class="side-nav__item">
+                        <a href="#" class="side-nav__link">
+                            <svg class="side-nav__icon">
+                                <use xlink:href="img/symbol.svg#icon-graduation-cap"></use>
+                            </svg>
+                            <span>Graduation</span>
+                        </a>
+                    </li>
+
+                    <li class="side-nav__item">
+                        <a href="#" class="side-nav__link">
+                            <svg class="side-nav__icon">
+                                <use xlink:href="img/symbol.svg#icon-graduation-cap"></use>
+                            </svg>
+                        <span>Masters</span>
+                        </a>
+                    </li>
+                </ul>
+
+                <!---------LEGAL TEXT-------------->
+                <div class="legal">
+                    @copy 2021 by Mahatab Hossain. All Rights Reserved.
+                </div>
+            </nav>
+
+            <!--------Hotel view-------------------->
+            <main class="main-section">
+                <div class="gallery">
+                    <figure class="gallery__item">
+                        <img src="img/hotel-1.jpg" alt="hotel-1" class="gallery__photo">
+                    </figure>
+                    <figure class="gallery__item">
+                        <img src="img/hotel-2.jpg" alt="hotel-2" class="gallery__photo">
+                    </figure>
+                    <figure class="gallery__item">
+                        <img src="img/hotel-3.jpg" alt="hotel-3" class="gallery__photo">
+                    </figure>
+                </div>
+
+                <!----------Overview------------>
+                <div class="overview">
+                    <h1 class="overview__heading">
+                        Visitors ratings
+                    </h1>
+                    <div class="overview__stars">
+                        <svg class="overview__icon-star">
+                            <use xlink:href="img/sprite.svg#icon-star"></use>
+                        </svg>
+                        <svg class="overview__icon-star">   
+                            <use xlink:href="img/sprite.svg#icon-star"></use>
+                        </svg>
+                        <svg class="overview__icon-star">
+                            <use xlink:href="img/sprite.svg#icon-star"></use>
+                        </svg>
+                        <svg class="overview__icon-star">
+                            <use xlink:href="img/sprite.svg#icon-star"></use>
+                        </svg>
+                        <svg class="overview__icon-star">
+                            <use xlink:href="img/sprite.svg#icon-star"></use>
+                        </svg>
+                    </div>
+
+                    <!----------Location pin--------------->
+                    <div class="overview__location">
+                        <svg class="overview__icon-location">
+                            <use xlink:href="img/sprite.svg#icon-location-pin"></use>
+                        </svg>
+                        <button class="btn-inline">Current location</button>
+                    </div>
+                    
+                    <!---------Overall ratings------------>
+                    <div class="overview__rating">
+                        <div class="overview__rating-average">8.6</div>
+                        <div class="overview__rating-count">429 votes</div>
+                    </div>
+                </div>
+            </main>
+        </div>
+    </div>
+    
+</body>
+
+</html>
